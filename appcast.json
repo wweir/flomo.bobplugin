@@ -1,0 +1,13 @@
+{
+  "identifier": "cc.wweir.bobplugin.flomo",
+  "versions": [
+    {
+      "version": "0.1.0",
+      "desc": "实现发送 memo 的功能",
+      "sha256": "70439d4c57f2bd4dbe5a4dfed915689d28c7f8368f370628d689ebc41e791136",
+      "url": "https://raw.githubusercontent.com/ripperhe/test/master/bobplugin/test_0.3.0.bobplugin",
+      "minBobVersion": "0.5.0",
+      "timestamp": 1730114004764
+    }
+  ]
+}

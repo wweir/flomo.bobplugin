@@ -1,0 +1,24 @@
+{
+  "identifier": "flomo",
+  "version": "0.1.0",
+  "category": "translate",
+  "name": "post to flomo",
+  "summary": "",
+  "icon": "",
+  "author": "",
+  "homepage": "",
+  "appcast": "https://raw.githubusercontent.com/wweir/flomo.bobplugin/refs/heads/main/appcast.json",
+  "minBobVersion": "0.5.0",
+  "options": [
+    {
+      "identifier": "api_url",
+      "type": "text",
+      "title": "专属记录 API"
+    },
+    {
+      "identifier": "default_tag",
+      "type": "text",
+      "title": "额外的 tag 标识"
+    }
+  ]
+}
