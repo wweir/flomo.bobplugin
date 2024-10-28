@@ -1,24 +1,83 @@
 {
-  "identifier": "flomo",
+  "identifier": "memo",
   "version": "0.1.0",
   "category": "translate",
-  "name": "post to flomo",
+  "name": "post a memo",
   "summary": "",
-  "icon": "",
+  "icon": "flomo",
+  "icons": [
+    {
+      "identifier": "flomo",
+      "type": "file",
+      "filePath": "flomo.png"
+    },
+    {
+      "identifier": "memos",
+      "type": "file",
+      "filePath": "memos.png"
+    }
+  ],
   "author": "",
   "homepage": "",
-  "appcast": "https://raw.githubusercontent.com/wweir/flomo.bobplugin/refs/heads/main/appcast.json",
-  "minBobVersion": "0.5.0",
+  "appcast": "https://raw.githubusercontent.com/wweir/memo.bobplugin/refs/heads/main/appcast.json",
+  "minBobVersion": "1.8.0",
   "options": [
     {
-      "identifier": "api_url",
+      "title": "memo 服务类型",
+      "identifier": "memo_type",
+      "type": "menu",
+      "menuValues": [
+        {
+          "title": "flomo",
+          "value": "flomo",
+          "defaultPluginIconIdentifier": "flomo",
+          "defaultPluginName": "post to flomo"
+        },
+        {
+          "title": "memos",
+          "value": "memos",
+          "defaultPluginIconIdentifier": "memos",
+          "defaultPluginName": "post to memos"
+        }
+      ],
+      "isKeyOption": true,
+      "defaultPluginName": "post a memo"
+    },
+    {
+      "identifier": "flomo_api_url",
       "type": "text",
-      "title": "专属记录 API"
+      "title": "flomo 专属记录 API",
+      "textConfig": {
+        "type": "visible",
+        "placeholderText": "https://flomoapp.com/iwh/XXX/xxxxxxxx/"
+      }
+    },
+    {
+      "identifier": "memos_api_url",
+      "type": "text",
+      "title": "memos 服务器地址",
+      "textConfig": {
+        "type": "visible",
+        "placeholderText": "https://memos.example.com:5230"
+      }
+    },
+    {
+      "identifier": "memos_cookie",
+      "type": "text",
+      "title": "memos 页面使用的 Cookie",
+      "textConfig": {
+        "type": "secure",
+        "placeholderText": "memos.access-token=XXX.XXX.XXX"
+      }
     },
     {
       "identifier": "default_tag",
       "type": "text",
-      "title": "额外的 tag 标识"
+      "title": "额外的 tag 标识",
+      "textConfig": {
+        "type": "visible",
+        "placeholderText": "bob"
+      }
     }
   ]
 }
