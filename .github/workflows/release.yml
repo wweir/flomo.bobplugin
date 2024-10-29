@@ -14,8 +14,8 @@ jobs:
 
       - name: build plugin
         run: |
-          zip flomo.bobplugin LICENSE info.json icon.png *.js
-          sha256sum flomo.bobplugin
+          zip memo.bobplugin LICENSE info.json icon.png *.js
+          sha256sum memo.bobplugin
 
       - uses: ncipollo/release-action@v1
         with:
