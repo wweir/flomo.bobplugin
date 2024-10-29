@@ -14,7 +14,7 @@ jobs:
 
       - name: build plugin
         run: |
-          zip memo.bobplugin LICENSE info.json icon.png *.js
+          zip memo.bobplugin LICENSE info.json *.png *.js
           sha256sum memo.bobplugin
 
       - uses: ncipollo/release-action@v1
