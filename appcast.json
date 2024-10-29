@@ -4,7 +4,7 @@
     {
       "version": "0.2.0",
       "desc": "更名 memo, 支持 memos",
-      "sha256": "40d4a598b8d2bb658f8dc2c82d58bb0836cfc033dc22fbaacd820b3e7c920208",
+      "sha256": "a1e4c59d138bc97b2f5b238d1fe866fd9e321e42048cb31c5e086763c9be4122",
       "url": "https://github.com/wweir/memo.bobplugin/releases/download/v0.2.0/memo.bobplugin",
       "minBobVersion": "1.8.0",
       "timestamp": 1730175148598
